@@ -1,0 +1,10 @@
+＃include<stdio.h>
+main()//已知笼中有头h只，腿f只，x为鸡的数量，y为兔子的数量
+{
+    int h,f,x,y;
+    scanf("%d%d",&h,&f);
+      x=(4*h-f)/(4-2);
+      y=h-x;
+    printf("x=%d,y=%d",x,y);
+ }
+      
