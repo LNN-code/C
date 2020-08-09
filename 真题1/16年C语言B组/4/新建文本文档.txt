@@ -1,0 +1,7 @@
+5 13 6 24 2 8 19 27 6 12 1 17
+N=12
+quicksort(a[12] p=0 r=11)
+p<r -> q=partition (a[12] p=0 r=11
+	 partition->i=0 j=12 x=a[0]=5
+		   while(0<11?0&&a[1]=13<5?)
+			while(a[11>5) 

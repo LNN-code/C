@@ -1,0 +1,34 @@
+#include<stdio.h>
+#include<string.h> 
+main()
+{
+	int s[3],year,month,day,i,j=0,k,box,box1;
+	int a[3][3];
+	for(i=0;i<3;i++)
+	{
+	scanf("%d",&s[i]);
+	}
+	for(i=0;i<3;i++)
+	{
+		for(j=0;j<3;j++)
+		{
+			a[i][j]=s[j];
+		}
+	 } 
+	for(i=1;i<3;i++)
+	 {
+		for(j=0;j<3;j++)
+		{
+	 	if(i==1||j==0){box=a[i][j];a[i][j]=a[i][j+2];a[i][j+2]=box;}
+	 	if(i==2||j==0){box1=a[i][j+1];a[i][j+1]=a[i][j+2];a[i][j+2]=box1;}
+		}
+	}
+	 for(i=0;i<3;i++)
+	{
+		for(j=0;j<3;j++)
+		{
+			printf("%d",a[i][j]);
+		}
+		printf("\n");
+	 } 
+}
