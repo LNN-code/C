@@ -1,0 +1,36 @@
+#include<stdio.h>
+main()
+{
+	int a,b,c,d,e,f,g,h,i,x,y,z;
+	for(a=1;a<=9;a++)
+	{
+		for(b=1;b<=9;b++)
+		{
+			for(c=1;c<=9;c++)
+			{
+				for(d=1;d<=9;d++)
+				{
+					for(e=1;e<=9;e++)
+					{
+						for(f=1;f<=9;f++)
+						{
+							for(g=1;g<=9;g++)
+							{
+								for(h=1;h<=9;h++)
+								{
+									for(i=1;i<=9;i++)
+									{
+										x=(d*100)+(e*10)+f;
+										y=(g*100)+(h*10)+i;
+										if(a+(float)(b/c)+(float)(x/y)==10) z++;
+									}
+								}
+							}
+						}
+					}
+				}
+			}
+		}
+	}
+	printf("%d",z);
+ } 
